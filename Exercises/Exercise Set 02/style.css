@@ -1,0 +1,61 @@
+.mochiy-pop-one-regular {
+    font-family: "Mochiy Pop One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+body {
+    background-color: rgb(226, 151, 235);
+    height: 100%;
+    margin: 0;
+  }
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.box {
+    display: flex;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 1);
+    flex-direction: column;
+    border: 0px solid rgb(0, 0, 0);
+    background: radial-gradient(rgb(226, 141, 238), rgb(182, 90, 208));
+    /* background-color: rgba(49, 231, 192, 0.162); */
+    width: 320px;
+    height: 240px;
+    padding: 50px;
+    margin: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: transform 0.3s ease;
+    border-radius: 20px;
+}
+
+.title {
+    font-family: "Mochiy Pop One", sans-serif;
+    font-weight: 0;
+    font-style: normal;
+}
+
+.subtitle {
+    font-family: "Mochiy Pop One", sans-serif;
+    font-size: 15px;
+    font-style: normal;
+}
+
+.box:hover {
+    transform: translateY(-25px);
+}
+
+@media(max-width: 800px) {
+    .container{
+        flex-direction: column;
+    }
+}
+
